@@ -6,7 +6,7 @@
 class Widget{
 protected:
     float x, y, mx, my;
-
+    bool fokuszalva;
 public:
     Widget(float _x, float _y, float _mx, float _my);
     virtual void rajzol();

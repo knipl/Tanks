@@ -1,17 +1,28 @@
 #include "MyApp.h"
-
-
-
+#include <iostream>
 using namespace genv;
 using namespace std;
 
+MyApp::MyApp(const int sz, const int  m) :  Application(sz,m)
+{
+JM = new JatekMester(false);
+tank0 = new Tank(50,300,0,0);
+tank1 = new Tank(650,300,1,0);
+TankWidget * PL1 = new TankWidget(0, 0,0,0, tank0); widgets.push_back(PL1);
+TankWidget * PL0 = new TankWidget(0,0,0,0, tank1); widgets.push_back(PL0);
+lovegallito = new Slide(50,50,100,20,0,90); widgets.push_back(lovegallito);
+power = new Slide(500,50,100,20,0,50); widgets.push_back(power);
 
-Tank * PL1 = new Tank(50, 300,0,0,1); widgets.push_back(PL1);
-Tank * PL0 = new Tank(650,300,0,0,0); widgets.push_back(PL0);
+fire = new Gomb(375,50,50,20,[&](){
 
-Gomb * fire = new Gomb(375,50,50,20,[&](){},"FIRE"); widgets.push_back(fire);
+                       JM -> LovesIgaz();
 
-MyApp::ki(){
+
+                       },"FIRE"); widgets.push_back(fire);
+
+}
+
+void MyApp::ki(){
 
     gin.timer(60);
     while(gin >> ev && ev.keycode!=key_escape) {
@@ -19,6 +30,31 @@ MyApp::ki(){
             for(size_t i = 0; i<widgets.size();i++){
                 widgets[i]->rajzol();
             }
+
+            lovegallito -> klikk(ev);
+            fire -> klikk(ev);
+            if(!JM -> AktivGetter())
+            {
+                tank0 -> SetLoveg(lovegallito-> GetErtek());
+            }
+            else tank1 -> SetLoveg(lovegallito -> GetErtek());
+
+            power -> klikk(ev);
+            if(!JM -> AktivGetter())
+            {
+                tank0 -> SetSebesseg(power -> GetErtek());
+            }else tank1 -> SetSebesseg(power -> GetErtek());
+
+            if(ev.time)
+            {
+                if(JM -> LovesGetter())
+                {
+                    if(!JM ->AktivGetter())
+                    JM -> Fire(tank0);
+                    else JM -> Fire(tank1);
+                }
+            }
+
             gout<<refresh;
     }
 }

@@ -5,6 +5,7 @@ Widget::Widget(float _x, float _y, float _mx, float _my) {
     y=_y;
     mx=_mx;
     my=_my;
+    fokuszalva = 0;
 }
 
 void Widget::rajzol(){}
