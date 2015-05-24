@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1432238032 source:c:\users\gergely\documents\codeblocks\tanks\button.cpp
+	"button.hpp"
+
+1432497806 c:\users\gergely\documents\codeblocks\tanks\widget.hpp
+	"graphics.hpp"
+
+1330557110 c:\users\gergely\documents\codeblocks\tanks\include\graphics.hpp
+	<string>
+
+1432392871 c:\users\gergely\documents\codeblocks\tanks\button.hpp
+	<functional>
+	"widget.hpp"
+
+1432392828 source:c:\users\gergely\documents\codeblocks\tanks\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"button.hpp"
+	"tank.h"
+	<vector>
+	<iostream>
+
+1432403654 c:\users\gergely\documents\codeblocks\tanks\tank.h
+	"widget.hpp"
+
+1432392871 source:c:\users\gergely\documents\codeblocks\tanks\tank.cpp
+	"tank.h"
+
+1430480283 source:c:\users\gergely\documents\codeblocks\tanks\widget.cpp
+	"widget.hpp"
+
+1432403654 source:c:\users\gergely\documents\codeblocks\tanks\lovedek.cpp
+	"lovedek.h"
+
+1432403654 c:\users\gergely\documents\codeblocks\tanks\lovedek.h
+	"widget.hpp"
+
+1432497820 source:c:\users\gergely\documents\codeblocks\tanks\application.cpp
+	"Application.h"
+	<iostream>
+
+1432497807 c:\users\gergely\documents\codeblocks\tanks\application.h
+	"widget.hpp"
+	"graphics.hpp"
+	<vector>
+
+1432495580 source:c:\users\gergely\documents\codeblocks\tanks\jatekmester.cpp
+
