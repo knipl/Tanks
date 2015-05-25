@@ -5,7 +5,8 @@
 #include "graphics.hpp"
 #include <vector>
 
-class Application{
+class Application
+{
 protected:
     genv::event ev;
     const int szeles,magas;

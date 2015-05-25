@@ -3,11 +3,13 @@
 
 #include "tank.h"
 
-class JatekMester{
+class JatekMester
+{
 protected:
     bool aktiv;
     bool loves;
-    float ido;
+    float ido,tank_x,tank_y;
+    int kell;
 public:
     JatekMester(bool _aktiv);
     void Fire(Tank *tank);

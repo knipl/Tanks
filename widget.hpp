@@ -3,7 +3,8 @@
 
 #include "graphics.hpp"
 
-class Widget{
+class Widget
+{
 protected:
     float x, y, mx, my;
     bool fokuszalva;

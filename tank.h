@@ -5,7 +5,8 @@
 
 using namespace std;
 
-class Tank{
+class Tank
+{
 public:
     bool ele;
     bool Player;
@@ -29,10 +30,6 @@ public:
     bool GetGolyoLatszodik();
     bool GetPlayer();
     float GetSebesseg();
-
-
-
-
 
 };
 

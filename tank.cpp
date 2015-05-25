@@ -1,63 +1,91 @@
 #include "tank.h"
+
 #include <math.h>
+
 using namespace std;
 
 Tank::Tank(float _x, float _y, bool Pl, float _loveg)
     : x(_x), y(_y), Player(Pl), loveg(_loveg)
-{    float pi=3.14159265;
+{
+    float pi=3.14159265;
 
     loveg = 0;
     ele = true;
-    golyo.x=x+(sqrt(900) * cos(loveg*pi/180));
-    golyo.y=y+(sqrt(900)*sin(-loveg*pi/180));
+
+    if(Player)
+    {
+        golyo.x=x-(sqrt(900) * cos(loveg*pi/180));
+        golyo.y=y+(sqrt(900) * sin(-loveg*pi/180));
+    }
+    else
+    {
+        golyo.x=1.5*x+(sqrt(900) * cos(loveg*pi/180));
+        golyo.y=y+(sqrt(900) * sin(-loveg*pi/180));
+    }
+
 }
 
-void Tank::SetEle(bool _ele){
+void Tank::SetEle(bool _ele)
+{
     ele=_ele;
 }
-void Tank::SetLoveg(float _loveg){
+void Tank::SetLoveg(float _loveg)
+{
     loveg=_loveg;
 }
-void Tank::SetGolyoX(float _x){
+void Tank::SetGolyoX(float _x)
+{
     golyo.x=_x;
 }
-void Tank::SetGolyoY(float _y){
+void Tank::SetGolyoY(float _y)
+{
     golyo.y=_y;
 }
-void Tank::SetGolyoLatszodik(bool _latszodik){
+void Tank::SetGolyoLatszodik(bool _latszodik)
+{
     golyo.latszodik=_latszodik;
 }
-void Tank::SetSebesseg(float _sebesseg){
+void Tank::SetSebesseg(float _sebesseg)
+{
     golyo.sebesseg=_sebesseg;
 }
-bool Tank::GetEle(){
+bool Tank::GetEle()
+{
     return ele;
 }
-float Tank::GetLoveg(){
+float Tank::GetLoveg()
+{
     return loveg;
 }
-float Tank::GetGolyoX(){
+float Tank::GetGolyoX()
+{
     return golyo.x;
 }
-float Tank::GetGolyoY(){
+float Tank::GetGolyoY()
+{
     return golyo.y;
 }
 
-float Tank::GetX(){
+float Tank::GetX()
+{
     return x;
 }
-float Tank::GetY(){
+float Tank::GetY()
+{
     return y;
 }
 
-bool Tank::GetGolyoLatszodik(){
+bool Tank::GetGolyoLatszodik()
+{
     return golyo.latszodik;
 }
 
-bool Tank::GetPlayer(){
+bool Tank::GetPlayer()
+{
     return Player;
 }
-float Tank::GetSebesseg(){
+float Tank::GetSebesseg()
+{
     return golyo.sebesseg;
 }
 

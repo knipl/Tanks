@@ -6,7 +6,8 @@
 
 
 
-class Gomb : public Widget{
+class Gomb : public Widget
+{
 private:
     std::function <void ()> fv;
     std::string nev;

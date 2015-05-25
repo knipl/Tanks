@@ -4,7 +4,8 @@
 #include "widget.hpp"
 #include "tank.h"
 
-class TankWidget : public Widget{
+class TankWidget : public Widget
+{
 protected:
     Tank *tank;
 public:

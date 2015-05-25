@@ -9,14 +9,15 @@
 #include "JatekMester.h"
 #include "slide.hpp"
 
-class MyApp: public Application{
+class MyApp: public Application
+{
 protected:
     JatekMester * JM;
-Tank * tank0;
-Tank * tank1;
-Slide * lovegallito;
-Slide * power;
-Gomb * fire;
+    Tank * tank0;
+    Tank * tank1;
+    Slide * lovegallito;
+    Slide * power;
+    Gomb * fire;
 public:
     MyApp(const int sz, const int m);
     void ki();

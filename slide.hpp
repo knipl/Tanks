@@ -2,7 +2,8 @@
 #define SLIDE_H_INCLUDED
 
 
-class Slide:public Widget{
+class Slide:public Widget
+{
 private:
     int ertek, maximum, minimum;
     float pctg, div;
@@ -13,7 +14,7 @@ public:
     void rajzol();
     void klikk(genv::event ev);
     int GetErtek();
-   // void kiirat(genv::event ev);
+    // void kiirat(genv::event ev);
 };
 
 #endif // SLIDE_H_INCLUDED

@@ -46,37 +46,37 @@
 
 1432495580 source:c:\users\gergely\documents\codeblocks\tanks\jatekmester.cpp
 
-1432504726 source:c:\users\gergely\documents\github\tanks\application.cpp
+1432526416 source:c:\users\gergely\documents\github\tanks\application.cpp
 	"Application.h"
 	<iostream>
 
-1432497807 c:\users\gergely\documents\github\tanks\application.h
+1432516029 c:\users\gergely\documents\github\tanks\application.h
 	"widget.hpp"
 	"graphics.hpp"
 	<vector>
 
-1432502733 c:\users\gergely\documents\github\tanks\widget.hpp
+1432516029 c:\users\gergely\documents\github\tanks\widget.hpp
 	"graphics.hpp"
 
 1330557110 c:\users\gergely\documents\github\tanks\include\graphics.hpp
 	<string>
 
-1432238032 source:c:\users\gergely\documents\github\tanks\button.cpp
+1432516029 source:c:\users\gergely\documents\github\tanks\button.cpp
 	"button.hpp"
 
-1432392871 c:\users\gergely\documents\github\tanks\button.hpp
+1432516029 c:\users\gergely\documents\github\tanks\button.hpp
 	<functional>
 	"widget.hpp"
 
 1432499369 source:c:\users\gergely\documents\github\tanks\lovedek.cpp
 	"lovedek.h"
 
-1432506314 c:\users\gergely\documents\github\tanks\lovedek.h
+1432516029 c:\users\gergely\documents\github\tanks\lovedek.h
 
-1432497912 source:c:\users\gergely\documents\github\tanks\main.cpp
+1432520812 source:c:\users\gergely\documents\github\tanks\main.cpp
 	"MyApp.h"
 
-1432507550 c:\users\gergely\documents\github\tanks\myapp.h
+1432516029 c:\users\gergely\documents\github\tanks\myapp.h
 	"Application.h"
 	"widget.hpp"
 	"button.hpp"
@@ -85,41 +85,41 @@
 	"JatekMester.h"
 	"slide.hpp"
 
-1432506984 c:\users\gergely\documents\github\tanks\tank.h
+1432520222 c:\users\gergely\documents\github\tanks\tank.h
 	"lovedek.h"
 
-1432501877 c:\users\gergely\documents\github\tanks\tankwidget.h
+1432516029 c:\users\gergely\documents\github\tanks\tankwidget.h
 	"widget.hpp"
 	"tank.h"
 
-1432509295 source:c:\users\gergely\documents\github\tanks\myapp.cpp
+1432528184 source:c:\users\gergely\documents\github\tanks\myapp.cpp
 	"MyApp.h"
 	<iostream>
 
-1432508510 source:c:\users\gergely\documents\github\tanks\tank.cpp
+1432524774 source:c:\users\gergely\documents\github\tanks\tank.cpp
 	"tank.h"
 	<math.h>
 
-1432508038 source:c:\users\gergely\documents\github\tanks\tankwidget.cpp
+1432527914 source:c:\users\gergely\documents\github\tanks\tankwidget.cpp
 	"tankwidget.h"
 	"graphics.hpp"
 	<math.h>
 	<iostream>
 
-1432502784 source:c:\users\gergely\documents\github\tanks\widget.cpp
+1432516029 source:c:\users\gergely\documents\github\tanks\widget.cpp
 	"widget.hpp"
 
-1432509232 c:\users\gergely\documents\github\tanks\jatekmester.h
+1432524419 c:\users\gergely\documents\github\tanks\jatekmester.h
 	"tank.h"
 
-1432503377 c:\users\gergely\documents\github\tanks\slide.hpp
+1432516029 c:\users\gergely\documents\github\tanks\slide.hpp
 
-1432508973 source:c:\users\gergely\documents\github\tanks\jatekmester.cpp
+1432527781 source:c:\users\gergely\documents\github\tanks\jatekmester.cpp
 	"JatekMester.h"
 	<math.h>
 	<iostream>
 
-1432503384 source:c:\users\gergely\documents\github\tanks\slide.cpp
+1432528376 source:c:\users\gergely\documents\github\tanks\slide.cpp
 	"widget.hpp"
 	"slide.hpp"
 	<sstream>

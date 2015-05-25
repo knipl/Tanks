@@ -2,11 +2,12 @@
 #define LOVEDEK_H_INCLUDED
 
 
-class Lovedek{
+class Lovedek
+{
 public:
-float x,y;
-bool latszodik;
-float sebesseg;
+    float x,y;
+    bool latszodik;
+    float sebesseg;
 };
 
 #endif // LOVEDEK_H_INCLUDED
