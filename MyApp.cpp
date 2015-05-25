@@ -12,9 +12,9 @@ MyApp::MyApp(const int sz, const int  m) :  Application(sz,m)
     widgets.push_back(PL1);
     TankWidget * PL0 = new TankWidget(0,0,0,0, tank1);
     widgets.push_back(PL0);
-    lovegallito = new Slide(50,50,100,20,0,90);
+    lovegallito = new Slide(50,50,150,20,0,90,"Direction");
     widgets.push_back(lovegallito);
-    power = new Slide(500,50,100,20,0,50);
+    power = new Slide(600,50,100,20,0,50,"Power");
     widgets.push_back(power);
 
     fire = new Gomb(375,50,50,20,[&]()

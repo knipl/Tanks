@@ -8,8 +8,7 @@ class JatekMester
 protected:
     bool aktiv;
     bool loves;
-    float ido,tank_x,tank_y;
-    int kell;
+    float ido;
 public:
     JatekMester(bool _aktiv);
     void Fire(Tank *tank);

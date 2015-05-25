@@ -42,6 +42,8 @@
 		</Linker>
 		<Unit filename="Application.cpp" />
 		<Unit filename="Application.h" />
+		<Unit filename="JatekMester.cpp" />
+		<Unit filename="JatekMester.h" />
 		<Unit filename="MyApp.cpp" />
 		<Unit filename="MyApp.h" />
 		<Unit filename="button.cpp" />
@@ -49,8 +51,12 @@
 		<Unit filename="lovedek.cpp" />
 		<Unit filename="lovedek.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="slide.cpp" />
+		<Unit filename="slide.hpp" />
 		<Unit filename="tank.cpp" />
 		<Unit filename="tank.h" />
+		<Unit filename="tankwidget.cpp" />
+		<Unit filename="tankwidget.h" />
 		<Unit filename="widget.cpp" />
 		<Unit filename="widget.hpp" />
 		<Extensions>

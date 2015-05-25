@@ -7,7 +7,7 @@
 using namespace std;
 using namespace genv;
 
-Slide::Slide(float _x, float _y, float _mx, float _my, int _minimum, int _maximum):Widget(_x,_y,_mx,_my)
+Slide::Slide(float _x, float _y, float _mx, float _my, int _minimum, int _maximum, string nev):Widget(_x,_y,_mx,_my)
 {
     minimum = _minimum;
     maximum=_maximum;
@@ -18,12 +18,14 @@ Slide::Slide(float _x, float _y, float _mx, float _my, int _minimum, int _maximu
     pos = 0;
     div = maximum-minimum;
     klikkelve=0;
+    neve=nev;
 }
 
 void Slide :: rajzol()
 {
     gout << color(150,150,150) << move_to(x,y) << box(mx,my)
          << color(1,1,1) << move_to(x+pos,y) << box(my,my);
+    gout << move_to(x+mx/3,y-my)<<text(neve);
     if(mouse_1)
     {
         gout << color(150,150,150) << move_to(x-10,y) << box(10,my);
